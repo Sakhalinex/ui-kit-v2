@@ -1,0 +1,41 @@
+{
+  "name": "@my-org/ui-kit-v2",
+  "version": "1.0.0",
+  "description": "Reusable UI-kit built with React, TypeScript and Ladle",
+  "main": "dist/index.js",
+  "module": "dist/index.mjs",
+  "types": "dist/types/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "dev": "ladle serve",
+    "build": "tsup src/index.ts --dts --format esm,cjs --out-dir dist",
+    "preview": "ladle preview"
+  },
+  "keywords": [
+    "ui-kit",
+    "react",
+    "typescript",
+    "ladle",
+    "components",
+    "design-system"
+  ],
+  "author": "Your Name",
+  "license": "MIT",
+  "dependencies": {
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0"
+  },
+  "devDependencies": {
+    "@ladle/react": "^5.0.3",
+    "@types/react": "^19.1.8",
+    "@types/react-dom": "^19.1.6",
+    "tsup": "^8.5.0",
+    "typescript": "^5.8.3"
+  },
+  "peerDependencies": {
+    "react": ">=17",
+    "react-dom": ">=17"
+  }
+}
