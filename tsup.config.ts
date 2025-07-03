@@ -1,14 +1,11 @@
-// tsup.config.ts
 import { defineConfig } from 'tsup';
 
 export default defineConfig({
   entry: ['src/index.ts'],
   outDir: 'dist',
-  format: ['esm', 'cjs'],
+  format: ['cjs'], // ← только CommonJS
   dts: true,
   clean: true,
-  target: 'es2020',
-  minify: false,
   sourcemap: true,
-  splitting: false, // отключи, если используешь commonjs
+  target: 'es2020',
 });
