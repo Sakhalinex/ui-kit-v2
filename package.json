@@ -1,5 +1,5 @@
 {
-  "name": "super-ui-kit-v2",
+  "name": "@game/super-ui-kit-v2",
   "version": "1.0.0",
   "description": "Reusable UI-kit built with React, TypeScript and Ladle",
   "main": "dist/index.js",
