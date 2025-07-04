@@ -3,13 +3,14 @@
   "version": "1.0.0",
   "description": "Reusable UI-kit built with React, TypeScript and Ladle",
   "main": "dist/index.js",
-  "types": "dist/types/index.d.ts",
+  "module": "dist/index.mjs",
+  "types": "dist/index.d.ts",
   "files": [
     "dist"
   ],
   "scripts": {
     "dev": "ladle serve",
-    "build": "tsup src/index.ts --dts --format cjs --out-dir dist",
+    "build": "tsup",
     "preview": "ladle preview"
   },
   "keywords": [

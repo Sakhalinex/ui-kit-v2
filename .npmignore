@@ -1,0 +1,4 @@
+src/
+*.stories.*
+tsup.config.ts
+*.test.*
