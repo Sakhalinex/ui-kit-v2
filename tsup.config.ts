@@ -11,4 +11,7 @@ export default defineConfig({
   splitting: true,
   external: ['react', 'react-dom'],
   minify: true,
+  loader: {
+    '.scss': 'css',
+  },
 });
