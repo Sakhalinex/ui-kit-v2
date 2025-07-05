@@ -1,5 +1,5 @@
 import type { Story } from '@ladle/react';
-import { BaseButton } from '../BaseButton/BaseButton';
+import { BaseButton } from '../common/BaseButton/BaseButton';
 
 export const Primary: Story = () => (
   <BaseButton onClick={() => alert('Clicked!')} variant="primary">

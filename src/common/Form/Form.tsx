@@ -13,7 +13,7 @@ export const Form: React.FC = () => {
   return (
     <form onSubmit={handleSubmit} style={{ display: 'flex', flexDirection: 'column', gap: 12 }}>
       <Input label="Name" value={name} onChange={e => setName(e.target.value)} />
-      <BaseButton variant='primary'>Submit</BaseButton>
+      <BaseButton variant="primary">Submit</BaseButton>
     </form>
   );
 };

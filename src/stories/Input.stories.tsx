@@ -1,6 +1,6 @@
 import type { Story } from '@ladle/react';
 import { useState } from 'react';
-import { Input } from '../Input/Input';
+import { Input } from '../common/Input/Input';
 
 export const Default: Story = () => {
   const [value, setValue] = useState('');

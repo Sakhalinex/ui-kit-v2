@@ -1,3 +1,3 @@
-export { BaseButton } from './BaseButton/BaseButton';
-export { Form } from './Form/Form';
-export { Input } from './Input/Input';
+export { BaseButton } from './common/BaseButton/BaseButton';
+export { Form } from './common/Form/Form';
+export { Input } from './common/Input/Input';
