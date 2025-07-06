@@ -7,9 +7,9 @@
 }
 
 .primary {
-  background-color: var(--background-container-primary);
+  background-color: var(--background-container-primary, #ab0000);
 }
 
 .secondary {
-  background-color: var(--background-container-secondary);
+  background-color: var(--background-container-secondary, #57ee00);
 }
