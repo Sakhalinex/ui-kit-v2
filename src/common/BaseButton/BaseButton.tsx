@@ -1,4 +1,6 @@
 import React from 'react';
+import styles from './BaseButton.module.scss';
+import clsx from 'clsx';
 
 export interface BaseButton {
   children: React.ReactNode;
@@ -7,17 +9,10 @@ export interface BaseButton {
 }
 
 export const BaseButton: React.FC<BaseButton> = ({ children, onClick, variant = 'primary' }) => {
-  const style: React.CSSProperties = {
-    padding: '10px 16px',
-    backgroundColor: variant === 'primary' ? '#007bff' : '#6c757d',
-    color: '#fff',
-    border: 'none',
-    borderRadius: 4,
-    cursor: 'pointer',
-  };
+  const style: React.CSSProperties = {};
 
   return (
-    <button onClick={onClick} style={style}>
+    <button className={clsx(styles.button, styles[variant])} onClick={onClick} style={style}>
       {children}
     </button>
   );
